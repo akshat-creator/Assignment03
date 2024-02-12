@@ -1,5 +1,6 @@
 package org.example
 
+
 /**
  * This ``Graph`` that represents a directed graph
  * @param VertexType the representation of a vertex in the graph

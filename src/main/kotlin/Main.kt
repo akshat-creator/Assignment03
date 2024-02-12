@@ -1,5 +1,19 @@
 package org.example
 
+
 fun main() {
-    println("Hello World!")
+    val n = arrayOf(
+        "#########",
+        "#......S#",
+        "#.#.#####",
+        "#...#...#",
+        "#.#####.#",
+        "#.......#",
+        "#.#####.#",
+        "#.#T....#",
+        "#########"
+    )
+
+    val path = findPathInMaze(n)
+    path.forEach { println("${it.first} ${it.second}") }
 }

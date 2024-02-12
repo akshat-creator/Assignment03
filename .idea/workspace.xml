@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8389e26-ebab-45ba-9177-2a45d5e72f57" name="Changes" comment="Heap reference implementation is ready">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/DijkstrasAlgorithm.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/DirectedWeightedGraph.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/MazeSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/MinPriorityQueue.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/DirectedWeightedGraphTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/MinPriorityQueueTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/MinHeap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/MinHeap.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/MinHeapTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/MinHeapTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Interfaces.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Interfaces.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,11 +25,31 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Assignment03" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -42,11 +67,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build Assignment03.executor": "Run",
+    "Gradle.DirectedWeightedGraphsTest.executor": "Run",
     "Gradle.MinHeapTest.adjustPriority.executor": "Run",
     "Gradle.MinHeapTest.executor": "Run",
     "Gradle.MinHeapTest.insert.executor": "Run",
     "Gradle.MinHeapTest.isEmpty.executor": "Run",
     "Gradle.MinHeapTest.testInfiniteValues.executor": "Run",
+    "Gradle.MinPriorityQueueTest.executor": "Run",
+    "Gradle.PriorityQueueTest.executor": "Run",
+    "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -54,6 +84,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/akshat/Documents/Classes/DSA/Assignment03",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,8 +101,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MinHeapTest">
-    <configuration name="MinHeapTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Kotlin.MazeSolverKt">
+    <configuration name="DirectedWeightedGraphsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -84,7 +115,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;MinHeapTest&quot;" />
+            <option value="&quot;org.example.DirectedWeightedGraphsTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -95,7 +126,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MinHeapTest.adjustPriority" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MinPriorityQueueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -108,7 +139,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;MinHeapTest.adjustPriority&quot;" />
+            <option value="&quot;MinPriorityQueueTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -119,7 +150,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MinHeapTest.insert" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PriorityQueueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -132,7 +163,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;MinHeapTest.insert&quot;" />
+            <option value="&quot;PriorityQueueTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -143,68 +174,34 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MinHeapTest.isEmpty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;MinHeapTest.isEmpty&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.MainKt" />
+      <module name="Assignment03.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="MinHeapTest.testInfiniteValues" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;MinHeapTest.testInfiniteValues&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="MazeSolverKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.MazeSolverKt" />
+      <module name="Assignment03.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MinHeapTest" />
-        <item itemvalue="Gradle.MinHeapTest.testInfiniteValues" />
-        <item itemvalue="Gradle.MinHeapTest.isEmpty" />
-        <item itemvalue="Gradle.MinHeapTest.adjustPriority" />
-        <item itemvalue="Gradle.MinHeapTest.insert" />
+        <item itemvalue="Kotlin.MazeSolverKt" />
+        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.DirectedWeightedGraphsTest" />
+        <item itemvalue="Gradle.PriorityQueueTest" />
+        <item itemvalue="Gradle.MinPriorityQueueTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-11.0.21-corretto-11.0.21-3183f394aec4-26afc3bf" />
+        <option value="jdk-11.0.22-corretto-11.0.22-f644763e9732-cf124b14" />
       </set>
     </attachedChunks>
   </component>
@@ -221,6 +218,8 @@
       <workItem from="1707340778658" duration="598000" />
       <workItem from="1707409487935" duration="674000" />
       <workItem from="1707502270539" duration="1010000" />
+      <workItem from="1707597842144" duration="21501000" />
+      <workItem from="1707715234600" duration="3356000" />
     </task>
     <task id="LOCAL-00001" summary="Added heap implementation.">
       <option name="closed" value="true" />
